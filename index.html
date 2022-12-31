@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="initialize();">
+    <div class="player">
+        <div class="title">Player</div>
+        <img id="pRock" onclick="shootRock();" src="rock.jpg">
+        <img id="pPaper" onclick ="shootPaper();" src="paper.jpg">
+        <img id="pScissors" onclick="shootScissors();" src="scissors.jpg">
+        <div id="playerRock">Rock Count: 5</div>
+        <div id="playerPaper">Paper Count: 5</div>
+        <div id="playerScissors">Scissors Count: 5</div>
+    </div>
+
+    <div class="cpu">
+        <div class="computer">Computer</div>
+        <img id="cRock" src="rock.jpg">
+        <img id="cPaper" src="paper.jpg">
+        <img id="cScissors" src="scissors.jpg">
+        <div id="comRock">Rock Count: 5</div>
+        <div id="comPaper">Paper Count: 5</div>
+        <div id="comScissors">Scissors Count: 5</div>
+    </div>
+<br>
+<br>
+<br>
+<button onclick="reset();">RESET</button>
+    <div id="gameLog">Game Log</div>
+
+    
+</body>
+</html>
